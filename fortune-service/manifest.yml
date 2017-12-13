@@ -2,11 +2,12 @@
 applications:
 - name: fortune
   path: build/libs/fortune-service-0.0.1-SNAPSHOT.jar 
-  host: mofo110-fortune-service 
+  host: morton-fortune-service 
   memory: 768M
+  no-route: true
   services: 
   - config-server
   - service-registry
   env:
     SPRING_CLOUD_CONFIG_DISCOVERY_ENABLED: false 
-    TRUST_CERTS: api.sys.selma.cf-app.com 
+    TRUST_CERTS: api.run.pivotal.io 

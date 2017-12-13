@@ -2,7 +2,7 @@
 applications:
 - name: greeting
   path: build/libs/greeting-app-0.0.1-SNAPSHOT.jar
-  host: mofo110-greeting
+  host: morton-greeting
   memory: 768M
   services:
   - config-server
@@ -11,4 +11,4 @@ applications:
   - hystrix-dashboard
   env:
     SPRING_CLOUD_CONFIG_DISCOVERY_ENABLED: false
-    TRUST_CERTS: api.sys.selma.cf-app.com
+    TRUST_CERTS: api.run.pivotal.io
